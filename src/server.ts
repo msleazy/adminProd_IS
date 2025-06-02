@@ -6,7 +6,7 @@ import db from './config/db'
 import colors from 'colors'
 
 //Conectar a bd
-async function connectDB() {
+export async function connectDB() {
     try {
         await db.authenticate()
         db.sync()
@@ -27,6 +27,11 @@ const server = express()
 server.use(express.json())
 
 server.use('/api/products', router)
+
+//Para testear la conexión
+server.get('/api', (req, res) => {
+    res.send('Desde Api')
+})
 
 //Docs
 server.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec) )
