@@ -321,13 +321,6 @@ src/
 - [x] Optimización de código
 - [x] Deploy y configuración
 
-### Futuras Mejoras 🚀
-- [ ] Autenticación JWT
-- [ ] Paginación y filtros
-- [ ] Frontend React
-- [ ] Caché con Redis
-- [ ] CI/CD Pipeline
-
 ## 👥 Equipo de Desarrollo
 
 - **José Armando Martínez Jiménez**
@@ -336,21 +329,11 @@ src/
 - **Mariano Morales Ramírez**
 
 **Instructor:** José Guillermo Fierro Mendoza  
-**Institución:** Instituto Tecnológico Nacional de México  
+**Institución:** Instituto Tecnológico Nacional de México en Celaya
 **Carrera:** Ingeniería en Sistemas Computacionales
 
 ## 📄 Licencia
 
 Este proyecto fue desarrollado con fines educativos como parte del curso de Ingeniería de Software.
 
-## 🤝 Contribuir
 
-1. Fork del proyecto
-2. Crear rama para feature (`git checkout -b feature/AmazingFeature`)
-3. Commit de cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abrir Pull Request
-
----
-
-⭐ **¡No olvides dar una estrella al proyecto si te fue útil!**
