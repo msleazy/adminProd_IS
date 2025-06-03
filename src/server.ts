@@ -10,7 +10,7 @@ export async function connectDB() {
     try {
         await db.authenticate()
         db.sync()
-        console.log(colors.blue.bold('Conexión exitosa a la base de datos'))      
+        //console.log(colors.blue.bold('Conexión exitosa a la base de datos'))      
     } catch (error) {
         //console.log(error)
         console.log(colors.red.bold( 'Hubo un error al conectar a la BD'))
@@ -30,7 +30,7 @@ server.use('/api/products', router)
 
 //Para testear la conexión
 server.get('/api', (req, res) => {
-    res.send('Desde Api')
+    res.json({ msg: 'Desde Api' })
 })
 
 //Docs
