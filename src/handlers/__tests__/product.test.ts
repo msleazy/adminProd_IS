@@ -68,7 +68,6 @@ describe('GET /api/products', () => {
         expect(response.headers['content-type']).toMatch(/json/)
         expect(response.body).toHaveProperty('data')
         expect(response.body.data).toHaveLength(1)
-
         expect(response.status).not.toBe(404)
         expect(response.body).not.toHaveProperty('errors')
     })
@@ -152,7 +151,7 @@ describe('PUT /api/products/:id', () => {
                                     availability: true,
                                     price : 300
                                 })
-
+                                
         expect(response.status).toBe(404)
         expect(response.body.error).toBe('Producto no encontrado')
 
